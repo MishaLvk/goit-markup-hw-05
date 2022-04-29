@@ -69,7 +69,7 @@
           <h1 class="hero-title">
             Эффективные решения<br />для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
      
@@ -133,25 +133,34 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list">
             <li class="element-development">
+              <div class="development-card">
               <img
                 src="./images/img_code.jpg"
                 alt="Разработчик пишет код"
                 width="370"
               />
+              <p class="development-card-text">Десктопные приложения</p>
+            </div>
             </li>
             <li class="element-development">
+              <div class="development-card">
               <img
                 src="./images/img_smartphone.jpg"
                 alt="Разработчик настраивает оформление"
                 width="370"
               />
+              <p class="development-card-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="element-development">
+              <div class="development-card">
               <img
                 src="./images/img_palette.jpg"
                 alt="Разработчик подбирает цвет"
                 width="370"
               />
+              <p class="development-card-text">Дизайнерские решения</p>
+            </div>
             </li>
           </ul>
         </div>
@@ -348,5 +357,13 @@
           </ul></div>
       </div >
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="button-close-modal" data-modal-close><svg width="18" height="18">
+          <use href="./images/symbol-defs.svg#icon-close-black"></use>
+        </svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
